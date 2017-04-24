@@ -1,0 +1,9 @@
+{
+"Field" :"char",
+"Texture" : "greasy",
+"Color" : [1.0,1.0,1.0,1.0],
+"FillColor" : [1.0,1.0,1.0,1.0],
+"Specular" :[8.0,164.0],
+"Density": 4.0,
+"TextureScale":0.5
+}

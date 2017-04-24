@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <ItemGroup>
+  <PropertyPageSchema Include="$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml" />
+  <AvailableItemName Include="ShaderItem">
+   <Targets>GenerateIncludedShaders</Targets>
+  </AvailableItemName>
+ </ItemGroup>
+
+ <ItemGroup>
+        <ShaderFiles Include="$(OutDir)*.shader"/>
+		<AssetFiles Include="$(ProjectDir)Assets\**\*.*" />
+ </ItemGroup>
+ 
+  <!-- Inject a custom target into Clean by extending CleanDependsOn -->
+  <PropertyGroup>
+    <CleanDependsOn>
+	$(CleanDependsOn);
+	CustomAfterClean
+    </CleanDependsOn>
+  </PropertyGroup> 
+
+  <PropertyGroup>
+    <BuildDependsOn>
+	$(BuildDependsOn);
+	CustomAfterBuild
+    </BuildDependsOn>
+  </PropertyGroup> 
+
+  <!-- Clean the generated output files -->
+  <Target Name="CustomAfterClean" 
+  >
+  <RemoveDir Directories="$(OutDir)fields\" />
+  <RemoveDir Directories="$(OutDir)meshes\" />
+  <RemoveDir Directories="$(OutDir)textures\" />
+  <RemoveDir Directories="$(OutDir)materials\" />
+  <RemoveDir Directories="$(OutDir)gpp\" />
+    <Delete Files="@(ShaderFiles)" />
+	<Delete Files="$(OutDir)shaderLocation.txt" />
+	<Delete Files="$(OutDir)freeglut.dll" />
+	<Delete Files="$(OutDir)glew32.dll" />
+  </Target>
+
+  <!-- Shader location path for run-time recompilation -->
+  <Target Name ="CustomAfterBuild">
+  <WriteLinesToFile
+            File="$(OutDir)shaderLocation.txt"
+            Lines="$(ProjectDir)shaders\"
+            Overwrite="true"
+            Encoding="ASCII"/>
+	
+	<Copy
+    SourceFiles="@(AssetFiles)"
+    DestinationFolder="$(OutDir)\%(RecursiveDir)"
+    />
+  </Target>
+  
+    <!-- Shader include resolution -->
+ <Target
+  Name="GenerateIncludedShaders"
+  BeforeTargets="ClCompile"
+>
+
+  <Message Text="Resolving Includes: %(ShaderItem.Identity)" Importance="High" />
+  <Exec Command="gpp\gpp.exe -o &quot;$(OutDir)%(Filename)%(Extension)&quot; %(ShaderItem.Identity)"/>
+  
+ </Target>
+ 
+ </Project>

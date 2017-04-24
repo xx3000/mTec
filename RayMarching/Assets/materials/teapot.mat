@@ -1,0 +1,9 @@
+{
+"Field" :"teapot",
+"Texture" : "iron",
+"Color" : [1.0,1.0,1.0,1.0],
+"FillColor" : [0.0,1.8,0.48,1.0],
+"Specular" :[8.0,64.0],
+"Density": 1.9,
+"TextureScale":0.25
+}

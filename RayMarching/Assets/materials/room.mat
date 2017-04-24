@@ -1,0 +1,9 @@
+{
+"Field" :"",
+"Texture" : "bricks2",
+"Color" : [1.0,1.0,1.0,1.0],
+"FillColor" : [0.0,0.0,0.0,0.0],
+"Specular" :[8.0,64.0],
+"Density": 0.0,
+"TextureScale":0.1
+}

@@ -1,0 +1,9 @@
+{
+"Field" :"dragon_med",
+"Texture" : "marble2",
+"Color" : [1.0,1.0,0.7,1.0],
+"FillColor" : [2.0,2.0,2.0,1.0],
+"Specular" :[8.0,164.0],
+"Density": 1.9,
+"TextureScale":0.13
+}

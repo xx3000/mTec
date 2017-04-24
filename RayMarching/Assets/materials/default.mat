@@ -1,0 +1,9 @@
+{
+"Field" :"dragon",
+"Texture" : "tiny",
+"Color" : [1.0,1.0,1.0,1.0],
+"FillColor" : [1.0,1.0,1.0,1.0],
+"Specular" :[7.5,350.0],
+"Density": 999.9,
+"TextureScale":1.0
+}

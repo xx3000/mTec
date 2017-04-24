@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{a1249870-16cb-4025-9505-cdb66b5f8a70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RayMarching.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ShaderItem Include="shaders\defaultVs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\rayMarchingCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\shadingFs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\shadowsCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\aoCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\fieldCompactorCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\worldSdfCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\upsamplerCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\reprojectionFs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\velocityCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\shadowsFieldCullingCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\worldIdCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\baseVs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\blockMarchingFs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\implicitBlockMarchingFs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\reflectionCs.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+    <ShaderItem Include="shaders\blur.shader">
+      <Filter>Shader</Filter>
+    </ShaderItem>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\distanceFunctions.inc">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\aoTracing.inc">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\spheretracing.inc">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\helper.inc">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\conetracing.inc">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\constants.inc">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\cullingHelper.inc">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\noise.inc">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shaders\lighting.inc">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gpp\gpp.exe" />
+  </ItemGroup>
+</Project>
