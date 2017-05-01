@@ -14,3 +14,5 @@ LINK TO VIDEO HERE
 Implementation
 --------------
 The entire code of the mTec renderer can be downloaded from this repo. Please note that Visual Studio and FreeGLUT/GLEW are required to compile an executable.
+
+![](Figures/6.PNG)
