@@ -1141,6 +1141,7 @@ void µTec::Renderer::UpdateTransformBuffer()
 		if (fields->objectNeedsUpdate(i, params, m_worldShader->dispatchSize, worldOrigin, maxDist))
 		{
 			updateList.push(params);
+			std::cout << params.size.x << " " << params.size.y << " " << params.size.z << std::endl;
 		}
 	}
 }
