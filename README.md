@@ -9,7 +9,7 @@ This thesis gives an in-depth look into the most common distance field effects a
 
 Please refer to the [slides](talk_notes.pdf) from my talk at the University of Pennsylvania for an introduction into the topic of distance fields or my [thesis](SDF_Mroz.pdf) for more in-depth information.
 
-LINK TO VIDEO HERE
+[![](Figures/vid.PNG)](https://youtu.be/ARlbxXxB1UQ)
 
 Implementation
 --------------
