@@ -15,4 +15,18 @@ Implementation
 --------------
 The entire code of the mTec renderer can be downloaded from this repo. Please note that Visual Studio and FreeGLUT/GLEW are required to compile an executable.
 
+Keyboard Controls:
+q - quit
+Arrow Keys - Move
+v/space - Up/Down
+Mouse Left + Mouse Move - Camera Look
+w - recompile shaders
+e - toggle rotation
+r - toggle rotation speed
+a - toggle animation
+d - count average frametime
+s - toggle TAA
+
+If the compilation of the project fails because of an GPP.exe error, please recompile a new [General PreProcessor](https://github.com/logological/gpp) exe and add it to the project.
+
 ![](Figures/6.PNG)
