@@ -14,8 +14,10 @@ Please refer to the [slides](talk_notes.pdf) from my talk at the University of P
 Implementation
 --------------
 The entire code of the mTec renderer can be downloaded from this repo. Please note that Visual Studio and FreeGLUT/GLEW are required to compile an executable.
+ <br>
 <br>
 Keyboard Controls: <br>
+ <br>
 q - quit <br>
 Arrow Keys - Move <br>
 v/space - Up/Down <br>
